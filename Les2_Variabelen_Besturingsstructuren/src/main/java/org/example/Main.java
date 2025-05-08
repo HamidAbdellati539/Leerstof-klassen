@@ -37,7 +37,6 @@ public class Main {
         optredens[0] = new Optreden(30);
         optredens[1] = new Optreden(45);
 
-
         // Vergelijken van arrays en meerdimensionale arrays - voorbeeld
         System.out.printf("duurOptredens1 == duurOptredens2 geeft %b%n", duurOptredens1 == duurOptredens2);
         System.out.printf("duurOptredens1.equals(duurOptredens2) geeft %b%n", duurOptredens1.equals(duurOptredens2));
@@ -146,7 +145,16 @@ public class Main {
         for(int optreden: optredens2) {
             System.out.printf("het volgende element is %d%n", optreden);
         }
+        ArrayList<String> naam = new ArrayList<String>();
+        naam.add("Brahim");
+        naam.add("Riyad");
+        naam.add("Adil");
+        for (String namen : naam)
+        {
+            System.out.printf("het volgende element is %s%n", namen);
+        }
     }
+
 
     /**
      * Toont dat de band een VIP-status heeft als ze minstens 5 keer hebben opgetreden.
